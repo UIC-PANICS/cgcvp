@@ -18,7 +18,10 @@
   </head>
 
   <body>	
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+<?php 
+  include 'header.php';
+?>
+<!--     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,7 +37,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <div class="container">
 
@@ -62,11 +65,14 @@
       </div>
 
     </div><!-- /.container -->
-    <footer class="footer">
+<?php 
+  include 'footer.php';
+?>
+<!--     <footer class="footer">
       <div class="container">
         <span class="text-muted">&copy; UIC-PANICS 2017</span>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
