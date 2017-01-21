@@ -2,7 +2,7 @@
 
 if (@$_COOKIE['login'] != $url)
 {
-/*echo <<<nlogin*/
+echo <<<nlogin
 
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,11 +22,11 @@ if (@$_COOKIE['login'] != $url)
       </div>
     </nav>
 
-/*nlogin;*/
+nlogin;
 }
 else 
 
-/*	echo  <<<logined*/
+	echo  <<<logined
 
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@ else
         </form>
     </nav>
 	
-/*logined;*/
+logined;
 	
 }
 
