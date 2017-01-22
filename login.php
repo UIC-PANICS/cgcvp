@@ -1,4 +1,6 @@
 <?php  
+    session_start();
+    include 'function.php';
     if(isset($_POST["submit"]) && $_POST["submit"] == "Sign in")  
     {  
         $user = $_POST["username"];  
@@ -19,11 +21,9 @@
             {  
                 $row = mysqli_fetch_array($result);  //将数据以索引方式储存在数组中  
                 /*echo $row[0];  */
+                $_SESSION['LoginUsername'] = $row[0];
                 setcookie("login","$row[0]",time()+300);
-                $url = "drj";
-                echo "<script language='javascript' type='text/javascript'>";
-				echo "window.location.href='$url'";
-				echo "</script>";
+                redirect('mis.php');
             }  
             else  
             {  
@@ -34,6 +34,5 @@
     else  
     {  
         echo "<script>alert('Network Error!'); history.go(-1);</script>";  
-    }  
-  
+    }
 ?>  

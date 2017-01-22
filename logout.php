@@ -1,7 +1,9 @@
 <?php
-$url = "/";
+session_start();
+include 'function.php';
 @setcookie(login, NULL);
-echo "<script language='javascript' type='text/javascript'>";
-echo "window.location.href='$url'";
-echo "</script>";
+/*
+session_destroy();
+*/
+redirect('/');
 ?>

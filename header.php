@@ -17,6 +17,7 @@
         <form class="form-inline my-2 my-lg-0" style="width: auto;">
 <!-- Php part -->
         <?php
+        session_start();
         if (@$_COOKIE['login'] == "admin"){
           echo "<a class='btn btn-outline-warning btn-block' href='/logout.php'>"."Login as: ". @$_COOKIE['login']."</a>";
         }
