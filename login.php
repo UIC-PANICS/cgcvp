@@ -3,8 +3,8 @@
     include 'function.php';
     if(isset($_POST["submit"]) && $_POST["submit"] == "Sign in")  
     {  
-        $user = $_POST["username"];  
-        $psw = $_POST["password"];  
+        $user = $_POST["username"];
+        $psw = $_POST["password"];
         if($user == "" || $psw == "")  
         {  
             echo "<script>alert('Input Username or Password!'); history.go(-1);</script>";  
@@ -17,12 +17,12 @@
 			$sql = "select username from user where username = '$_POST[username]'";
 			$result = mysqli_query($link,$sql);
 			$num = mysqli_num_rows($result);
-            if($num)  
+            if($num)
             {  
                 $row = mysqli_fetch_array($result);  //将数据以索引方式储存在数组中  
                 /*echo $row[0];  */
                 $_SESSION['LoginUsername'] = $row[0];
-                setcookie("login","$row[0]",time()+300);
+                setcookie("login","$row[0]",time()+3600); //将登陆信息以Cookie形式储存1天
                 redirect('mis.php');
             }  
             else  
