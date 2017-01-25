@@ -12,7 +12,8 @@
             if (@$_COOKIE['login'] != "admin"){
                 include 'loginbox.php';
             } else{
-                echo "Welcome to CyberGame Competition Versus Platform developed by UIC-PANICS";
+                echo "Welcome to CyberGame Competition Versus Platform developed by UIC-PANICS"."<br><br><br>";
+                echo "<a class='btn btn-success' href='mis.php'>"."Enter MIS System</a>";
             }
             ?>
             <br>
