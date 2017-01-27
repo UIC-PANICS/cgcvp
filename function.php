@@ -6,5 +6,4 @@ function redirect($url)
 }
 
 
-
 ?>
